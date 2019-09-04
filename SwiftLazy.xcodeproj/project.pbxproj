@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EB2D251232032E80067209A /* SwiftLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58875541D0944AE00D6DE92 /* SwiftLazy.framework */; };
+		0EB2D257232033020067209A /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2D2342320328B0067209A /* ProviderTests.swift */; };
+		0EB2D258232033020067209A /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2D2352320328B0067209A /* LazyTests.swift */; };
+		0EB2D25A232034180067209A /* SwiftLazy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A58875541D0944AE00D6DE92 /* SwiftLazy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA1C5F38218C18250041442B /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6643DE2079FC240032B4A7 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA1C5F39218C18310041442B /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6643DE2079FC240032B4A7 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA6643DF2079FC240032B4A7 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643DD2079FC240032B4A7 /* Lazy.swift */; };
@@ -30,7 +34,34 @@
 		BADC36EF215CA73500CEC778 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36EC215CA73500CEC778 /* BaseProvider.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0EB2D252232032E80067209A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A588754B1D0944AE00D6DE92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A58875531D0944AE00D6DE92;
+			remoteInfo = "SwiftLazy-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0EB2D2592320340D0067209A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0EB2D25A232034180067209A /* SwiftLazy.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0EB2D2342320328B0067209A /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
+		0EB2D2352320328B0067209A /* LazyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
+		0EB2D238232032900067209A /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0EB2D24C232032E80067209A /* SwiftLazyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLazyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		169C0DE51DA3501F001F0AD5 /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		169C0E1C1DA355A6001F0AD5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169C0E4B1DA35CBE001F0AD5 /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0EB2D249232032E80067209A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB2D251232032E80067209A /* SwiftLazy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		169C0DDD1DA3501F001F0AD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB2D2322320328B0067209A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0EB2D2332320328B0067209A /* SwiftLazyTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0EB2D2332320328B0067209A /* SwiftLazyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EB2D2342320328B0067209A /* ProviderTests.swift */,
+				0EB2D2352320328B0067209A /* LazyTests.swift */,
+			);
+			path = SwiftLazyTests;
+			sourceTree = "<group>";
+		};
 		16640A4C1D9E1E7B00707BFC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +138,8 @@
 		A588754A1D0944AE00D6DE92 = {
 			isa = PBXGroup;
 			children = (
+				0EB2D238232032900067209A /* Package.swift */,
+				0EB2D2322320328B0067209A /* Tests */,
 				16640A4C1D9E1E7B00707BFC /* Sources */,
 				A58875551D0944AE00D6DE92 /* Products */,
 			);
@@ -93,6 +151,7 @@
 				A58875541D0944AE00D6DE92 /* SwiftLazy.framework */,
 				169C0DE51DA3501F001F0AD5 /* SwiftLazy.framework */,
 				169C0E4B1DA35CBE001F0AD5 /* SwiftLazy.framework */,
+				0EB2D24C232032E80067209A /* SwiftLazyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +199,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0EB2D24B232032E80067209A /* SwiftLazyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB2D254232032E80067209A /* Build configuration list for PBXNativeTarget "SwiftLazyTests" */;
+			buildPhases = (
+				0EB2D248232032E80067209A /* Sources */,
+				0EB2D249232032E80067209A /* Frameworks */,
+				0EB2D24A232032E80067209A /* Resources */,
+				0EB2D2592320340D0067209A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EB2D253232032E80067209A /* PBXTargetDependency */,
+			);
+			name = SwiftLazyTests;
+			productName = SwiftLazyTests;
+			productReference = 0EB2D24C232032E80067209A /* SwiftLazyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		169C0DC11DA3501F001F0AD5 /* SwiftLazy-OSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 169C0DE21DA3501F001F0AD5 /* Build configuration list for PBXNativeTarget "SwiftLazy-OSX" */;
@@ -200,9 +278,14 @@
 		A588754B1D0944AE00D6DE92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Alexander Ivlev";
 				TargetAttributes = {
+					0EB2D24B232032E80067209A = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
+					};
 					169C0DC11DA3501F001F0AD5 = {
 						LastSwiftMigration = 0900;
 					};
@@ -231,11 +314,19 @@
 				A58875531D0944AE00D6DE92 /* SwiftLazy-iOS */,
 				169C0DC11DA3501F001F0AD5 /* SwiftLazy-OSX */,
 				169C0E271DA35CBE001F0AD5 /* SwiftLazy-tvOS */,
+				0EB2D24B232032E80067209A /* SwiftLazyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0EB2D24A232032E80067209A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		169C0DE11DA3501F001F0AD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +351,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0EB2D248232032E80067209A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB2D257232033020067209A /* ProviderTests.swift in Sources */,
+				0EB2D258232033020067209A /* LazyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		169C0DC21DA3501F001F0AD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,7 +401,63 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0EB2D253232032E80067209A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A58875531D0944AE00D6DE92 /* SwiftLazy-iOS */;
+			targetProxy = 0EB2D252232032E80067209A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0EB2D255232032E80067209A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sia.SwiftLazy.SwiftLazyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EB2D256232032E80067209A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sia.SwiftLazy.SwiftLazyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		169C0DE31DA3501F001F0AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +767,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0EB2D254232032E80067209A /* Build configuration list for PBXNativeTarget "SwiftLazyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB2D255232032E80067209A /* Debug */,
+				0EB2D256232032E80067209A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		169C0DE21DA3501F001F0AD5 /* Build configuration list for PBXNativeTarget "SwiftLazy-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
